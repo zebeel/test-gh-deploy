@@ -1,5 +1,5 @@
 {
-  "name": "money-forward-coding-test",
+  "name": "test-gh-deploy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -27,7 +27,7 @@
     "prettier": "prettier --check 'src/**/*.ts' 'src/**/*.tsx'",
     "format": "prettier --write 'src/**/*.ts' 'src/**/*.tsx'",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://github.com/zebeel/test-gh-deploy"
+    "deploy": "gh-pages -d build -r https://github.com/zebeel/test-gh-deploy -t $GH_TOKEN"
   },
   "eslintConfig": {
     "extends": [
