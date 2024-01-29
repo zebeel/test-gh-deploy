@@ -22,6 +22,10 @@ jobs:
       - name: Run eslint
         run: |
           npm run lint
+      - name: Configure Git
+        run: |
+          git config --global user.email "chuong.le.jp@gmail.com"
+          git config --global user.name "Chuong Le"
       - name: Build
         run: npm run build
       - name: Deploy to GitHub Pages
