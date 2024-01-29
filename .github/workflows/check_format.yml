@@ -26,6 +26,7 @@ jobs:
         run: |
           git config --global user.email "chuong.le.jp@gmail.com"
           git config --global user.name "Chuong Le"
+          git remote set-url origin git@github.com:zebeel/test-gh-deploy.git
       - name: Build
         run: npm run build
       - name: Deploy to GitHub Pages

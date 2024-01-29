@@ -27,7 +27,7 @@
     "prettier": "prettier --check 'src/**/*.ts' 'src/**/*.tsx'",
     "format": "prettier --write 'src/**/*.ts' 'src/**/*.tsx'",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://github.com/zebeel/test-gh-deploy -t $GH_TOKEN"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
